@@ -1,0 +1,153 @@
+/*Theme Name: Job Portal
+Version: 1.0
+Author: A.K.M. Nazmul Islam*/
+
+/* --------------------- Mobile Device -------------------------------------  */
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoblack_italic';
+    src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold_condensed';
+    src: url('../fonts/roboto-boldcondensed-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-boldcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold_condensed_italic';
+    src: url('../fonts/roboto-boldcondenseditalic-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-boldcondenseditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotocondensed';
+    src: url('../fonts/roboto-condensed-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-condensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotocondensed_italic';
+    src: url('../fonts/roboto-condenseditalic-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-condenseditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    color: #212121;
+    font-family: 'robotolight';
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 150%;
+}
+p{
+    line-height: 150%;
+}
+.background-left-white-section{
+    background-color: #fff; 
+    height: 100%;
+}
+.right-section{
+    background: #34495E;
+}
+
+.margin-top-align{
+    margin-top: 20px;
+}
+.logo{
+    max-height: 60px; 
+    max-width: 120px;
+}
+@media (max-width : 767px) {
+
+}
+
+/* --------------------- Tablet Device -------------------------------------  */
+@media (min-width : 768px) and (max-width : 991px) {
+
+}
+/* --------------------- Medium Device -------------------------------------  */
+@media (min-width : 992px) and (max-width : 1199px) {
+    .background-right-section{
+        background: #34495E;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        z-index: -1;
+    } 
+}
+/* --------------------- Large Device -------------------------------------  */
+@media (min-width : 1200px) {
+    .background-right-section{
+        background: #34495E;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        z-index: -1;
+    }
+}
