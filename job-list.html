@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Job Portal</title>
+
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css.map" type="text/css">
+        <link rel="stylesheet" href="css/custom.css" type="text/css">
+
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid container-fluid-align">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <nav class="navbar navbar-default navbar-default-custom">
+                                <div class="container">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a href="#"> <img class="img-responsive header-logo" src="images/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav nav-custom">
+                                            <li class="normal"><a href="index.html">Home</a></li>
+                                            <li class="active"><a href="job-list.html">Find Jobs</a></li>
+                                            <li class="normal"><a href="">Blog</a></li>
+                                            <li class="normal"><a href="sign-up.html">Sign Up</a></li>
+                                            <li class="normal"><a href="login.html">Log In</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="container">
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                <div class="input-group"><span class="input-group-addon" id="addon-search"><span class="glyphicon glyphicon-search"></span></span><input name="q" value="" type="text" class="form-control" placeholder="Search JobPortal..." aria-describedby="addon-search"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <select class="form-control" >
+                                    <option value="Select" selected="">Select</option>
+                                    <option value="" >Location 1</option>
+                                    <option value="">Location 2</option>
+                                    <option value="">Location 3</option>
+                                    <option value="">Location 4</option>
+                                    <option value="">Location 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 form-group">
+                                <div class="filters-container">
+                                    <div class="filter-option">
+                                        <h4>Filter by Category</h4>
+                                        <ul class="list-unstyled radio">
+                                            <li><div class="iradio_minimal checked" ><input value="0" id="jc-0" type="radio" name="jc" checked="checked" ><ins class="iCheck-helper" ></ins></div><label for="jc-0" class="">All Categories</label></li>
+                                            <li><div class="iradio_minimal" ><input value="1" id="jc-1" type="radio" name="jc" ><ins class="iCheck-helper" ></ins></div><label for="jc-1" class="">Latest Jobs</label></li>
+                                            <li><div class="iradio_minimal" ><input value="4" id="jc-4" type="radio" name="jc" ><ins class="iCheck-helper" ></ins></div><label for="jc-4" class="">No Experience</label></li>
+                                            <li><div class="iradio_minimal hover" ><input value="5" id="jc-5" type="radio" name="jc" ><ins class="iCheck-helper" ></ins></div><label for="jc-5" class="hover">Multiple Vacancies</label></li>
+                                            <li><div class="iradio_minimal" ><input value="6" id="jc-6" type="radio" name="jc" ><ins class="iCheck-helper" ></ins></div><label for="jc-6" class="">Students</label></li>
+                                            <li><div class="iradio_minimal" ><input value="7" id="jc-7" type="radio" name="jc" ><ins class="iCheck-helper" ></ins></div><label for="jc-7">Walk-in Interview</label></li>
+                                            <li><div class="iradio_minimal" ><input value="8" id="jc-8" type="radio" name="jc" ><ins class="iCheck-helper" ></ins></div><label for="jc-8">Singaporean</label></li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter-option">
+                                        <h4>Filter by Job Type</h4>
+                                        <ul class="list-unstyled checkbox">
+                                            <li><div class="icheckbox_minimal checked" ><input value="1" id="jt-1" name="jt" type="checkbox" checked="checked" ><ins class="iCheck-helper" ></ins></div><label for="jt-1" class="">Part Time</label></li>
+                                            <li><div class="icheckbox_minimal" ><input value="2" id="jt-2" name="jt" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jt-2">Full Time</label></li>
+                                            <li><div class="icheckbox_minimal" ><input value="3" id="jt-3" name="jt" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jt-3" class="">Contract</label></li>
+                                            <li><div class="icheckbox_minimal" ><input value="4" id="jt-4" name="jt" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jt-4">Student Internship</label></li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter-option last">
+                                        <h4>Filter by Job Function</h4>
+                                        <ul class="list-unstyled checkbox">
+                                            <li><div class="icheckbox_minimal checked" ><input value="0" id="jf-0" type="checkbox" name="jf" checked="checked" ><ins class="iCheck-helper" ></ins></div><label for="jf-0" class="">All Job Functions</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="1" id="jf-1" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-1" class="">Accounting / Finance</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="2" id="jf-2" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-2" class="">Administrative / Clerical</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="4" id="jf-4" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-4" class="">Beauty &amp; Wellness</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="5" id="jf-5" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-5" class="">Building / Construction</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="6" id="jf-6" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-6">Call Centres / Telemarketing</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="7" id="jf-7" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-7">Cleaning / Housekeeping</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="3" id="jf-3" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-3">Creative / Design</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="8" id="jf-8" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-8">Customer Service / Receptionists</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="9" id="jf-9" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-9">Drivers / Riders / Delivery</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="20" id="jf-20" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-20">Education / Training</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="10" id="jf-10" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-10">General Production / Operators</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="11" id="jf-11" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-11">Hospitality / F&amp;B</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="12" id="jf-12" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-12">Human Resources</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="13" id="jf-13" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-13">IT / Technical / Engineers </label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="14" id="jf-14" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-14">Nursing / Health Care</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="15" id="jf-15" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-15">Others</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="16" id="jf-16" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-16">Sales / Retail / Marketing</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="17" id="jf-17" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-17">Secretaries / Personal Assistants</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="18" id="jf-18" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-18">Security</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="19" id="jf-19" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-19">Temporary / Events</label></li>
+                                            <li><div class="icheckbox_minimal" ><input class="input-jf" value="21" id="jf-21" name="jf" type="checkbox" ><ins class="iCheck-helper" ></ins></div><label for="jf-21">Warehousing &amp; Logistics</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h1 class="job-list-top-header"> Latest Jobs <span class="job-count">(2,977 jobs)</span></h1>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Sales Associate (Part-time / Full-time)</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; Shifts</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        <span class="job-salary">$1400</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo1.jpg" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Dental Assistant / Receptionist</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; 5 Day Week</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        UP TO <span class="job-salary">$1800</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo2.jpg" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Administrative Assistant (Merchandising)</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; 6 Day Week</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        UP TO <span class="job-salary">$1800</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo3.png" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Sales Associate (Part-time / Full-time)</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; Shifts</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        <span class="job-salary">$1400</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo1.jpg" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Dental Assistant / Receptionist</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; 5 Day Week</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        UP TO <span class="job-salary">$1800</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo2.jpg" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Administrative Assistant (Merchandising)</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; 6 Day Week</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        UP TO <span class="job-salary">$1800</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo3.png" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Sales Associate (Part-time / Full-time)</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; Shifts</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        <span class="job-salary">$1400</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo1.jpg" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Dental Assistant / Receptionist</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; 5 Day Week</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        UP TO <span class="job-salary">$1800</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo2.jpg" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Administrative Assistant (Merchandising)</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; 6 Day Week</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        UP TO <span class="job-salary">$1800</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo3.png" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="jobs">
+                                            <a href="" id="01" target="_blank">
+                                                <div class="job-post featured">
+                                                    <span class="featured-tag"></span>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <h2>Sales Associate (Part-time / Full-time)</h2>
+                                                            <div class="row">
+                                                                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <ul class="job-prop list-unstyled">
+                                                                        <li><span class="glyphicon glyphicon-tags"></span>&nbsp; Part Time, Full Time</li>
+                                                                        <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Multiple Locations</li>
+                                                                        <li><span class="glyphicon glyphicon-calendar"></span>&nbsp; Shifts</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3  col-md-3 col-lg-3">
+                                                                    <div class="salary-info">
+                                                                        <span class="job-salary">$1400</span> / month                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 form-group">
+                                                                    <div class="pull-left">
+                                                                        <img class="img-responsive company-logo" src="images/company-logo1.jpg" alt="Company Logo">
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <h5> MINISO </h5>
+                                                                        <h5> Posted On 24 Jun </h5>                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                                                    <span class="view-details">View Details »</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="text-center">
+                                            <ul class="pagination pagination-md">
+                                                <li class="first disabled"><span>« First</span></li>
+                                                <li class="prev disabled"><span>&lt;</span></li>
+                                                <li class="active"><a href="" rel="nofollow" data-page="0">1</a></li>
+                                                <li><a href="" rel="nofollow" data-page="1">2</a></li>
+                                                <li><a href="" rel="nofollow" data-page="2">3</a></li>
+                                                <li><a href="" rel="nofollow" data-page="3">4</a></li>
+                                                <li><a href="" rel="nofollow" data-page="4">5</a></li>
+                                                <li class="next"><a href="" rel="nofollow" data-page="1">&gt;</a></li>
+                                                <li class="last"><a href="" rel="nofollow" data-page="60">Last »</a></li>
+                                            </ul> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

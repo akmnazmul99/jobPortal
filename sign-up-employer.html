@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Job Portal</title>
+
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css.map" type="text/css">
+        <link rel="stylesheet" href="css/custom.css" type="text/css">
+
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid container-fluid-align">
+            <div class="row form-group">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <nav class="navbar navbar-default navbar-default-custom">
+                                <div class="container">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a href="#"> <img class="img-responsive header-logo" src="images/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav nav-custom">
+                                            <li class="normal"><a href="index.html">Home</a></li>
+                                            <li class="normal"><a href="job-list.html">Find Jobs</a></li>
+                                            <li class="normal"><a href="">Blog</a></li>
+                                            <li class="active"><a href="sign-up.html">Sign Up</a></li>
+                                            <li class="normal"><a href="login.html">Log In</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row form-group">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="container">
+                        <div class="job-seeker-pagelet">
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h1 class="employer-header">Create Account</h1>
+                                </div>
+                            </div>
+                            <div class="row margin-top-align">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h4 class="employer-tagline-title">Account Information</h4>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Username  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="text" name="username" id="username" value="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Password  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="password" name="password" id="password" value="">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Confirm Password  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="password" name="confirm-password" id="confirm-password" value="">
+                                </div>
+                            </div>
+                            <div class="row margin-top-align">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h4 class="employer-tagline-title">Company Details</h4>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Company Name  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="text" name="compalyName" id="compalyName" value="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Alternative Company Name  </h5>
+                                    <input class="form-control" placeholder="" type="text" name="alternativeCompalyName" id="alternativeCompalyName" value="">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Contact Person  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="text" name="contact" id="contactPerson" value="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Contact Person's Designation  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="text" name="designation" id="designation" value="">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Contact Person's Mobile  </h5>
+                                    <input class="form-control" placeholder="" type="text" name="mobile" id="mobile" value="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Contact Person's Email   <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="email" name="email" id="email" value="">
+                                </div>
+                            </div>
+                            <div class="row margin-top-align">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h4 class="employer-tagline-title">Industry Type  <span class="required">*</span></h4>
+                                </div>
+                            </div>
+                            <div class="industry-type-scroll">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="accounting" value=""> Accounting / Finance
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="administrative" value=""> Administrative / Clerical
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="beauty" value=""> Beauty & Wellness
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="building" value=""> Building / Construction
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="telemarketing" value=""> Call Centres / Telemarketing
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="cleaning" value=""> Cleaning / Housekeeping
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="design" value=""> Creative / Design
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="receptionists" value=""> Customer Service / Receptionists
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="drivers" value=""> Drivers / Riders / Delivery
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="education" value=""> Education / Training
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="operators" value=""> General Production / Operators
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="hospitality" value=""> Hospitality / F&B
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="resources" value=""> Human Resources
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="IT" value=""> IT / Technical / Engineers
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="nursing" value=""> Nursing / Health Care
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="sales" value=""> Sales / Retail / Marketing
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="secretaries" value=""> Secretaries / Personal Assistants
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="security" value=""> Security
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="events" value=""> Temporary / Events
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <input type="checkbox" name="warehousing" value=""> Warehousing & Logistics
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Business Description</h5>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="row margin-top-align">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h4 class="employer-tagline-title">Primary Contact Details  <span class="required">*</span></h4>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Company Address  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="text" name="companyAddress" id="companyAddress" value="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Country  <span class="required">*</span></h5>
+                                    <select class="form-control" >
+                                        <option value="Select" selected="">Select</option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Anguilla">Anguilla</option>
+                                        <option value="Antarctica">Antarctica</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>City  <span class="required">*</span></h5>
+                                    <select class="form-control" >
+                                        <option value="Select" selected="">Select</option>
+                                        <option value="B. Baria">B. Baria</option>
+                                        <option value="Bagerhat">Bagerhat</option>
+                                        <option value="Bandarban">Bandarban</option>
+                                        <option value="Barguna">Barguna</option>
+                                        <option value="Barisal">Barisal</option>
+                                        <option value="Bhola">Bhola</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Area  </h5>
+                                    <select class="form-control" >
+                                        <option value="Select" selected="">Select</option>
+                                        <option value="Agargaon">Agargaon</option>
+                                        <option value="Arambag">Arambag</option>
+                                        <option value="Ashulia">Ashulia</option>
+                                        <option value="Azimpur">Azimpur</option>
+                                        <option value="Azimpur">Azimpur</option>
+                                        <option value="Badda">Badda</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Billing Address  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="text" name="billingAddress" id="billingAddress" value="">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Contact Phone  <span class="required">*</span></h5>
+                                    <input class="form-control" placeholder="" type="text" name="contactPhone" id="contactPhone" value="">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <h5>Website Address (URL)  </h5>
+                                    <input class="form-control" placeholder="" type="text" name="websiteAddress" id="websiteAddress" value="">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <button class="custom-button" id="job-seeker-submit-button" name="job-seeker-submit-button">Create Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

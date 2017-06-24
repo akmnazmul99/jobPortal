@@ -98,56 +98,536 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     line-height: 150%;
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
 }
 p{
     line-height: 150%;
 }
+a{
+    font-size: 14px;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------------------------------- Home --------------------------------------*/
 .background-left-white-section{
-    background-color: #fff; 
+    background-color: #fff;
     height: 100%;
 }
+.background-right-section{
+    background: #3f51b5;
+    color: #fff;
+    height: 100%;
+    z-index: -1;
+}
 .right-section{
-    background: #34495E;
+    background: #3f51b5;
 }
 
 .margin-top-align{
     margin-top: 20px;
 }
-.logo{
+.logo, .custom-img{
     max-height: 60px; 
     max-width: 120px;
 }
-@media (max-width : 767px) {
+.navbar-default-custom{
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+    border-radius: 0px!important;
+}
+
+.nav-custom > li > a{
+    background-color: #3f51b5!important;
+    border-color: #3f51b5!important;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.nav-custom > li > a:hover{
+    background-color: #3f51b5!important;
+    border-color: #3f51b5!important;
+    color: #fff!important;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.nav-custom > .active > a{
+    color: #fff!important;
+}
+.nav-custom > .normal > a{
+    color: #bec5d5!important;
+}
+.job-seeker-section-header,.employer-section-header{
+    font-family: 'robotobold';
+    font-weight: bold;
+}
+.employer-section-header,.employer-section-para{
+    color: #fff;
+}
+.job-seeker-section-para,.employer-section-para{
+    font-family: 'robotolight';
+    font-size: 18px;
+    font-weight: bold;
+}
+.custom-button,custom-white-button{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.custom-button,.custom-button:hover,.custom-button:focus,.custom-button:active{
+    color: #fff;
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+}
+
+.custom-white-button,.custom-white-button:hover,.custom-white-button:focus,.custom-white-button:active{
+    color: #3f51b5;
+    background-color: #fff;
+    border-color: #fff;
+}
+.employer-bottom-text{
+    font-family: 'robotolight';
+    font-size: 14px;
+    color: #fff;
+}
+.job-seeker-bottom-text{
+    font-family: 'robotolight';
+    font-size: 14px;
+}
+/*------------------------------- Sign Up --------------------------------------*/
+.header-logo{
+    max-height: 40px; 
+    max-width: 80px;
 
 }
+.container-fluid-align{
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+.sign-up-pagelet{
+    background-color: #3F51B5;
+    padding: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 1px #bbb;
+}
+
+.sign-up-header{
+    font-family: 'robotolight';
+    color: #fff;
+}
+.sign-up-tagline-title{
+    font-family: 'robotolight';
+    font-size: 18px;
+    color: #fff;
+}
+.sign-up-tagline-para{
+    font-family: 'robotolight';
+    font-size: 16px;
+    color: #fff;
+}
+.sign-up-para{
+    font-family: 'robotolight';
+    color: #fff;
+}
+.job-seekers, .for-employers{
+    margin-bottom: 10px;
+}
+.job-seeker-header,.employer-header{
+    font-family: 'robotolight';
+    color: #212121;
+}
+.job-seeker-tagline-title{
+    font-family: 'robotolight';
+    font-size: 16px;
+    color: #212121;
+}
+.required{
+    color: #cc443d;
+    font-weight: bold;
+    padding-left: 1%;
+}
+.job-seeker-pagelet{
+    background-color: #fff;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 1px #bbb;
+}
+.employer-tagline-title{
+    font-family: 'robotolight';
+    font-size: 18px;
+    color: #212121;
+    font-weight: bold
+}
+.industry-type-scroll{
+    height: 200px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+/* --------------------- Login -------------------------------------  */
+.login-pagelet{
+    background-color: #3F51B5;
+    padding:  30px 30px 60px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 1px #bbb;
+}
+.login-header{
+    font-family: 'robotolight';
+    color: #fff;
+}
+.login-tagline-title{
+    font-family: 'robotolight';
+    font-size: 18px;
+    color: #fff;
+}
+.input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+    background-color: #fff!important;
+}
+.login-tagline-para{
+    font-family: 'robotolight';
+    font-size: 16px;
+    color: #fff;
+}
+.login-tagline-para > a{
+    font-family: 'robotolight';
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+}
+/* --------------------- Job List -------------------------------------  */
+
+.filters-container {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 20px;
+}
+.filter-option {
+    clear: both;
+    margin-bottom: 50px;
+}
+.filter-option h4 {
+    font-family: 'robotobold_condensed';
+    border-bottom: 1px solid #ccc;
+    color: #707070;
+    font-size: 16px;
+    margin: -20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.radio, .checkbox {
+    position: relative;
+    display: block;
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.list-unstyled li {
+    margin: 7px 0;
+}
+.job-list-top-header{
+    font-family: 'robotolight';
+    font-weight: bold;
+}
+.job-count {
+    font-family: 'robotoblack';
+    color: #707070;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.jobs {
+    border: 1px solid #bbb;
+}
+.jobs:hover {
+    border: 1px solid #3F51B5;
+    border-radius: 4px;
+}
+.jobs > a {
+    color: #212121;
+}
+.job-post.featured {
+    background: #fffeef;
+}
+.job-post {
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.job-post h2 {
+    color: #1f659b;
+    font-weight: normal;
+    margin: 0 20px 5px;
+    font-size: 24px;
+}
+.job-post .job-prop {
+    color: #303030;
+    margin: 8px 20px 0;
+}
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.job-post .job-prop> li {
+    margin-right: 10px;
+}
+.job-post .salary-info {
+    color: #303030;
+    margin-right: 30px;
+    text-align: right;
+}
+.job-salary {
+    color: #3F51B5;
+    font-size: 22px;
+    font-weight: bold;
+}
+.job-post h5 {
+    color: #303030;
+    font-weight: normal;
+    margin-top: -1px !important;
+}
+.company-logo{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    border: 1px solid #d2d6da;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 75px;
+}
+.job-post .view-details {
+    color: #1f659b;
+    display: block;
+    margin: 10px 20px;
+    text-align: right;
+}
+@media (max-width : 767px) {
+    .custom-container{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .background-right-section{
+        width: 100%;
+    }
+    .background-right-section-sm{
+        height: 100%;
+        width: 100%;
+        background: #3f51b5;
+        overflow: hidden;
+        padding: 0 30px; 
+    }
+    .job-seeker-section-para,.employer-section-para{
+        width: 100%;
+    }
+
+    .header-logo{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .job-seeker-pagelet{
+        background-color: #fff;
+        padding: 5px 0;
+        margin-bottom: 10px;
+        box-shadow: 0 0 1px #bbb;
+    }
+    .job-seeker-header,.employer-header{
+        font-size: 20px;
+    }
+    .job-seeker-tagline-title{
+        font-size: 14px!important;
+    }
+    .for-employers{
+        margin-top: 30px;
+    }
+}
+
+
+
 
 /* --------------------- Tablet Device -------------------------------------  */
 @media (min-width : 768px) and (max-width : 991px) {
+    .custom-container{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .background-right-section-sm{
+        height: 100%;
+        width: 100%;
+        background: #3f51b5;
+        overflow: hidden;
+        padding: 0 30px; 
+    }
+    .job-seeker-section-para,.employer-section-para{
+        width: 65%;
+    }
+    .background-left-white-section-sm{
+        margin: 0 30px;
+    }
+    .nav-custom{
+        float: right;
+    }
+    .header-logo{
+        margin-top: 5px;
+    }
 
+    .job-seeker-pagelet{
+        background-color: #fff;
+        padding: 30px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 1px #bbb;
+    }
+    .for-employers{
+        margin-top: 60px;
+    }
 }
 /* --------------------- Medium Device -------------------------------------  */
 @media (min-width : 992px) and (max-width : 1199px) {
+    .custom-container{
+        width: 970px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .background-right-section{
-        background: #34495E;
-        color: #fff;
         position: fixed;
         top: 0;
         right: 0;
-        height: 100%;
         width: 50%;
-        z-index: -1;
-    } 
+    }
+    .nav-custom{
+        float: right;
+    }
+    .job-seeker-section-header,.employer-section-header{
+        font-size: 42px;
+    }
+    .job-seeker-section-header,.employer-section-header{
+        margin-top: 120px;
+    }
+    .employer-section-header,.employer-section-para{
+        margin-left: 120px;
+    }
+    .job-seeker-section-para{
+        width: 65%;
+    }
+    .job-seeker-bottom-text,.employer-bottom-text{
+        margin-top: 100px;
+    }
+    .margin-left-right-align{
+        margin-left: 120px;
+    }
+    .header-logo{
+        margin-top: 5px;
+    }
+    .margin-top-80px{
+        margin-top: 80px;
+    }
+    .job-seeker-pagelet{
+        background-color: #fff;
+        padding: 30px 0;
+        margin-top: -50px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 1px #bbb;
+    }
+    .job-post .job-prop> li {
+        display: inline;
+    }
 }
 /* --------------------- Large Device -------------------------------------  */
 @media (min-width : 1200px) {
+    .custom-container{
+        width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .background-right-section{
-        background: #34495E;
-        color: #fff;
         position: fixed;
         top: 0;
         right: 0;
-        height: 100%;
         width: 50%;
-        z-index: -1;
+    }
+    .nav-custom{
+        float: right;
+    }
+    .job-seeker-section-header,.employer-section-header{
+        font-size: 42px;
+    }
+    .job-seeker-section-header,.employer-section-header{
+        margin-top: 120px;
+    }
+    .employer-section-header,.employer-section-para{
+        margin-left: 120px;
+    }
+    .job-seeker-section-para{
+        width: 65%;
+    }
+    .job-seeker-bottom-text,.employer-bottom-text{
+        margin-top: 100px;
+    }
+    .margin-left-right-align{
+        margin-left: 120px;
+    }
+    .header-logo{
+        margin-top: 5px;
+    }
+    .margin-top-80px{
+        margin-top: 80px;
+    }
+    .job-seeker-pagelet{
+        background-color: #fff;
+        padding: 30px 0;
+        margin-top: -50px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 1px #bbb;
+    }
+    .job-post .job-prop> li {
+        display: inline;
     }
 }
