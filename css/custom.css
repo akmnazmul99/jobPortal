@@ -93,7 +93,8 @@ Author: A.K.M. Nazmul Islam*/
 body{
     color: #212121;
     font-family: 'robotolight';
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 150%;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -111,7 +112,9 @@ a:hover{
     text-decoration: none;
     cursor: pointer;
 }
-
+.margin-top-10px{
+    margin-top: 10px;
+}
 /*------------------------------- Home --------------------------------------*/
 .background-left-white-section{
     background-color: #fff;
@@ -393,10 +396,7 @@ a:hover{
     margin: 8px 20px 0;
 }
 hr {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ccc;
 }
 .list-unstyled {
     padding-left: 0;
@@ -441,6 +441,106 @@ hr {
     margin: 10px 20px;
     text-align: right;
 }
+/* --------------------- Job Details -------------------------------------  */
+.job-details-top-header{
+    font-family: 'robotobold';
+    font-weight: bold;
+}
+.hiring-company{
+    font-family: 'robotolight';
+    font-weight: normal;
+}
+.date-posted{
+    font-family: 'robotolight';
+    font-weight: normal;
+}
+.job-details-company-logo{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    border: 1px solid #d2d6da;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    width: 75px;
+}
+.job-apply-header{
+    font-weight: bold; 
+    font-size: 20px;
+}
+.job-summary {
+    background-color: #ddd;
+    font-family: 'robotobold';
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding: 1px 10px;
+    /* margin: -5px; */
+}
+.job-summary-panel-body{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+.common-ul li{
+    font-family: 'robotolight';
+    font-size: 15px;
+    line-height: 150%;
+    margin-bottom: 5px;
+}
+.save-job-button{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.save-job-button,.save-job-button:hover,.save-job-button:focus,.save-job-button:active{
+    color: #fff;
+    border: 2px solid #3f51b5;
+    color:  #3f51b5;
+    font-weight: bold;
+}
+.success-button{
+    font-family: 'robotolight';
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.success-button,.success-button:hover,.success-button:focus,.success-button:active{
+    color: #fff;
+    font-weight: bold;
+}
+.success-button{
+    background-color: #43A047;
+}
+.success-button:hover,.success-button:focus,.success-button:active{
+    background-color: #008C23;
+}
+/* --------------------- Mobile Device -------------------------------------  */
+
+
 @media (max-width : 767px) {
     .custom-container{
         padding-right: 15px;
@@ -577,6 +677,10 @@ hr {
     .job-post .job-prop> li {
         display: inline;
     }
+    .company-logo-float,.salary-info-float{
+        float: right;
+    }
+   
 }
 /* --------------------- Large Device -------------------------------------  */
 @media (min-width : 1200px) {
@@ -630,4 +734,9 @@ hr {
     .job-post .job-prop> li {
         display: inline;
     }
+    .company-logo-float,.salary-info-float{
+        float: right;
+    }
+    
 }
+
