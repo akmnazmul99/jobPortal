@@ -106,7 +106,7 @@ p{
     line-height: 150%;
 }
 a{
-    font-size: 14px;
+    font-size: 15px;
 }
 a:hover{
     text-decoration: none;
@@ -115,6 +115,9 @@ a:hover{
 .margin-top-10px{
     margin-top: 10px;
 }
+.margin-top-50px{
+        margin-top: 50px;
+    }
 /*------------------------------- Home --------------------------------------*/
 .background-left-white-section{
     background-color: #fff;
@@ -538,9 +541,159 @@ hr {
 .success-button:hover,.success-button:focus,.success-button:active{
     background-color: #008C23;
 }
+/* ---------------------  Profile -------------------------------------  */
+.header-username-image-binding img, .header-username-image-binding .username{
+    display: inline;
+}
+.header-user-image{
+    max-height: 30px; 
+    margin-top: -2px;
+
+}
+.custom-header-dropdown-menu,.custom-header-dropdown-menu li:hover,.custom-header-dropdown-menu li a:hover{
+    background-color: #6d6d6d!important;
+}
+.custom-header-dropdown-menu li:hover,.custom-header-dropdown-menu li a{
+    color: #fff;
+}
+.custom-header-dropdown-menu li:hover,.custom-header-dropdown-menu li a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+.profile-pagelet{
+    background-color: #3F51B5;
+    padding:  30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 1px #bbb;
+}
+
+.pagelet-user-image{
+    height: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.pagelet-user-name,.pagelet-user-designation{
+    color: #fff;
+}
+.member-left-sidebar{
+    margin: 0;
+    padding: 0;
+}
+.member-left-sidebar li a{
+    color: #212121;
+    display: block;
+    padding: 8px;
+}
+.glyphicon-chevron-right{
+    color: #cdcbcb;
+}
+.member-left-sidebar li.active .glyphicon-chevron-right {
+    color: #1f659b;
+}
+
+.profile-top-header-title{
+    font-family: 'robotobold';
+    font-weight: bold;
+}
+.profile-user-image{
+    height: 150px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#fileselector {
+    margin: 10px; 
+}
+#upload-file-selector {
+    display:none;   
+}
+.basic-information-pagelet{
+    background-color: transparent;
+    padding:  0 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 1px #bbb;
+}
+
+/* --------------------- Applied Jobs -------------------------------------  */
+.applied-jobs-top-header-title{
+    font-family: 'robotobold';
+    font-weight: bold;
+}
+/* --------------------- Saved Jobs -------------------------------------  */
+.saved-jobs-top-header-title{
+    font-family: 'robotobold';
+    font-weight: bold;
+}
+/* --------------------- Resume -------------------------------------  */
+.resume-pagelet{
+    background-color: transparent;
+    padding:  0 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 1px #bbb;
+}
+
+.resume-top-header-title{
+    font-family: 'robotobold';
+    font-weight: bold;
+}
+.resume-image{
+    height: 120px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+.file-input {
+    overflow-x: auto;
+}
+.user-resume .input-group .form-control {
+    border-left: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    height: 34px;
+    padding-left: 10px;
+}
+.file-caption .glyphicon {
+    display: inline-block;
+    min-width: 18px;
+    float: left;
+    margin-top: 2px;
+}
+.file-caption-name {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 85%;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: none repeat scroll 0 0 transparent;
+    cursor: inherit;
+    display: block;
+}
+#add-experience-content{
+    padding: 15px;
+}
+.work-experience{
+    height: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.required{
+    position: absolute;
+}
 /* --------------------- Mobile Device -------------------------------------  */
-
-
 @media (max-width : 767px) {
     .custom-container{
         padding-right: 15px;
@@ -680,7 +833,7 @@ hr {
     .company-logo-float,.salary-info-float{
         float: right;
     }
-   
+
 }
 /* --------------------- Large Device -------------------------------------  */
 @media (min-width : 1200px) {
@@ -737,6 +890,6 @@ hr {
     .company-logo-float,.salary-info-float{
         float: right;
     }
-    
+
 }
 
