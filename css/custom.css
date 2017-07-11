@@ -116,8 +116,11 @@ a:hover{
     margin-top: 10px;
 }
 .margin-top-50px{
-        margin-top: 50px;
-    }
+    margin-top: 50px;
+}
+.display-hidden{
+    display: none;
+}
 /*------------------------------- Home --------------------------------------*/
 .background-left-white-section{
     background-color: #fff;
@@ -685,14 +688,37 @@ hr {
 #add-experience-content{
     padding: 15px;
 }
-.work-experience{
+.work-experience,.education,.skill,.language{
     height: 100px; 
     margin-left: auto;
     margin-right: auto;
 }
-.required{
-    position: absolute;
+
+.label-job-title, .label-company-name, .label-from, .label-end, .label-title, .required{
+    display: inline;
 }
+
+.option-box{
+    margin: 0;
+    padding: 0;
+}
+.block-grid-item,.li-active{
+    float: left;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px!important;
+    cursor: pointer;
+}
+.block-grid-item{
+    border: 2px solid #c8cad5;
+}
+.li-active{
+    border: 2px solid #5FBA7D;
+}
+
 /* --------------------- Mobile Device -------------------------------------  */
 @media (max-width : 767px) {
     .custom-container{
@@ -733,6 +759,9 @@ hr {
     }
     .for-employers{
         margin-top: 30px;
+    }
+     .block-grid-item,.li-active{
+        width: 100%;
     }
 }
 
@@ -776,6 +805,9 @@ hr {
     }
     .for-employers{
         margin-top: 60px;
+    }
+     .block-grid-item,.li-active{
+        width: 48%;
     }
 }
 /* --------------------- Medium Device -------------------------------------  */
@@ -833,7 +865,9 @@ hr {
     .company-logo-float,.salary-info-float{
         float: right;
     }
-
+ .block-grid-item,.li-active{
+        width: 48%;
+    }
 }
 /* --------------------- Large Device -------------------------------------  */
 @media (min-width : 1200px) {
@@ -890,6 +924,8 @@ hr {
     .company-logo-float,.salary-info-float{
         float: right;
     }
-
+    .block-grid-item,.li-active{
+        width: 48%;
+    }
 }
 
